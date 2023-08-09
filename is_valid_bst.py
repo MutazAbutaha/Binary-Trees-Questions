@@ -45,4 +45,4 @@ bst_root = create_binary_tree()
 non_bst_root = create_non_bst()
 
 print("Is the given binary tree a valid BST?", is_valid_bst(bst_root))  # Output: True
-print("Is the given binary tree a valid BST?", is_valid_bst(non_bst_root))  # Output: False
+# print("Is the given binary tree a valid BST?", is_valid_bst(non_bst_root))  # Output: False

@@ -27,6 +27,7 @@ def minDepth(root: TreeNode) -> int:
     return left_depth + 1 if left_depth < right_depth else right_depth + 1
 
 # Create the test binary tree
+
 root = TreeNode(3)
 root.left = TreeNode(9)
 root.right = TreeNode(20)

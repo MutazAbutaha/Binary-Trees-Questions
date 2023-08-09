@@ -9,7 +9,7 @@ def find_lonely_nodes(root):
 
     def dfs(node):
         if not node:
-            return
+            return None
 
         if node.left and not node.right:
             lonely_nodes.append(node.left.val)

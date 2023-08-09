@@ -8,12 +8,12 @@ class TreeNode:
 def sumOfLeftLeaves(root: TreeNode) -> int:
     if not root:
         return 0
-
+    left_sum = 0
     # Check if the left child is a leaf node
     if root.left and not root.left.left and not root.left.right:
-        left_sum = root.left.val
+        left_sum += root.left.val
     else:
-        left_sum = sumOfLeftLeaves(root.left)
+        sumOfLeftLeaves(root.left)
 
     # Recursively calculate the sum for the right subtree
     right_sum = sumOfLeftLeaves(root.right)

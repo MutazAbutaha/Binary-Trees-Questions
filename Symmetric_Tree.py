@@ -12,10 +12,6 @@ def is_symmetric(root):
             return False
 
         return left.val == right.val and is_mirror(left.left, right.right) and is_mirror(left.right, right.left)
-
-    if not root:
-        return True
-
     return is_mirror(root.left, root.right)
 
 # Example usage:
